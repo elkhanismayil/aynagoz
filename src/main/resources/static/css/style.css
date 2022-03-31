@@ -1,0 +1,190 @@
+#myNavBar {
+    height: 100px;
+}
+
+#navbarNav {
+    margin-left: 20rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#secondNavbar {
+    height: 70px;
+}
+
+#firstNavItem {
+    display: inline-block;
+    margin-left: 10rem;
+    border-left: 1px dotted white;
+    height: 45px;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+button {
+    display: inline-block;
+    margin-left: 0.7rem;
+    border-left: 1px dotted white;
+    height: 45px;
+}
+
+#secondNavItem {
+    display: inline-block;
+    margin-left: 2rem;
+    border-left: 1px dotted white;
+    height: 45px;
+}
+
+.bi-envelope {
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+
+#widgets_div .icon_div {
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+#widgets_div .icon_div span i {
+    font-size: 2.5rem;
+}
+
+#widgets_div .text_div {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#widgets_div .text_div span {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#widgets_div .text_div span + span {
+    color: #747F85;
+    font-size: 20px;
+}
+
+/*for phone icon*/
+.bi-phone {
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+
+#phoneDiv .icon_div {
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+#phoneDiv .icon_div span i {
+    font-size: 2.5rem;
+}
+
+#phoneDiv .text_div {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#phoneDiv .text_div span {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#phoneDiv .text_div span + span {
+    color: #747F85;
+    font-size: 20px;
+}
+
+/*for location icon*/
+.bi-geo-alt {
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+
+#locationDiv .icon_div {
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+#locationDiv .icon_div span i {
+    font-size: 2.5rem;
+}
+
+#locationDiv .text_div {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#locationDiv .text_div span {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#locationDiv .text_div span + span {
+    color: #747F85;
+    font-size: 20px;
+}
+
+.mega-menu {
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-item {
+    padding: 12px 40px 12px 20px;
+    font-size: 15px;
+    color: black;
+    font-weight: lighter;
+    background-color: white;
+    transform-origin: center;
+    animation: rotate 1.5s ease 1;
+}
+
+@keyframes rotate {
+    0%{transform: perspective(600px) rotateY(90deg); transform-origin: center;}
+    100%{transform: perspective(600px) rotateY(0deg); transform-origin: center;}
+}
+
+.dropdown-item:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.dropdown-item:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+
+.dropdown-item:nth-of-type(3) {
+    animation-delay: 0.2s;
+}
+
+.dropdown-item:nth-of-type(4) {
+    animation-delay: 0.3s;
+}
+
+.dropdown-item:nth-of-type(5) {
+    animation-delay: 0.4s;
+}
+
+.dropdown-item:nth-of-type(6) {
+    animation-delay: 0.5s;
+}
+
+.dropdown-item:nth-of-type(7) {
+    animation-delay: 0.6s;
+}
