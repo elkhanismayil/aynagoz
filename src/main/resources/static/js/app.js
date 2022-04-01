@@ -62,3 +62,44 @@ cngColorDrop.addEventListener('mouseout', function handleMouseOut(){
     cngColorDrop.style.color = 'white'
 })
 
+// change doctors color
+let docColor = document.getElementById('changeColorDoc');
+docColor.addEventListener('mouseover', function handleMouseOver() {
+    docColor.style.color = 'aqua'
+});
+
+docColor.addEventListener('mouseout', function handleMouseOut(){
+    docColor.style.color = 'white'
+})
+
+//change OPERATIONS color
+let operColor = document.getElementById('changeColorOper');
+operColor.addEventListener('mouseover', function handleMouseOver() {
+    operColor.style.color = 'aqua'
+});
+
+operColor.addEventListener('mouseout', function handleMouseOut(){
+    operColor.style.color = 'white'
+})
+
+//change ABOUT color
+let aboutColor = document.getElementById('changeColorAbout');
+aboutColor.addEventListener('mouseover', function handleMouseOver() {
+    aboutColor.style.color = 'aqua'
+});
+
+aboutColor.addEventListener('mouseout', function handleMouseOut(){
+    aboutColor.style.color = 'white'
+})
+
+//change APPOINTMENT color
+let appointmentColor = document.getElementById('changeColorAppointment');
+appointmentColor.addEventListener('mouseover', function handleMouseOver() {
+    appointmentColor.style.color = 'aqua'
+});
+
+appointmentColor.addEventListener('mouseout', function handleMouseOut(){
+    appointmentColor.style.color = 'white'
+})
+
+

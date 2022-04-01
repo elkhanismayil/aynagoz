@@ -11,7 +11,7 @@
     height: 70px;
 }
 
-#firstNavItem {
+.my-nav-item {
     display: inline-block;
     margin-left: 10rem;
     border-left: 1px dotted white;
@@ -36,9 +36,57 @@ button {
     height: 45px;
 }
 
+#thirdNavItem {
+    display: inline-block;
+    margin-left: 2rem;
+    border-left: 1px dotted white;
+    height: 45px;
+}
+
+#fourthNavItem {
+    display: inline-block;
+    margin-left: 2rem;
+    border-left: 1px dotted white;
+    height: 45px;
+}
+
+#fifthNavItem {
+    display: inline-block;
+    margin-left: 2rem;
+    border-left: 1px dotted white;
+    height: 45px;
+}
+
+#sixNavItem {
+    display: inline-block;
+    margin-left: 2rem;
+    border-left: 1px dotted white;
+    height: 45px;
+}
+
+#sevNavItem {
+    display: inline-block;
+    margin-left: 0.5rem;
+    border-left: 1px dotted white;
+    height: 45px;
+}
+
 .bi-envelope {
     font-size: 2rem;
     color: cornflowerblue;
+}
+
+.btn {
+    background-color: #05e7f7; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 15rem;
+    height: 50px;
+    width: 250px;
 }
 
 #widgets_div .icon_div {
@@ -134,8 +182,10 @@ button {
     font-size: 20px;
 }
 
+/*dropdown css*/
 .mega-menu {
     background-color: transparent;
+    margin-block: inherit;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -144,21 +194,29 @@ button {
 
 .dropdown-menu {
     border: none;
+    margin-top: 5px;
 }
 
 .dropdown-item {
     padding: 12px 40px 12px 20px;
     font-size: 15px;
+    font-family: arial, serif;
     color: black;
-    font-weight: lighter;
+    font-weight: bold;
     background-color: white;
     transform-origin: center;
-    animation: rotate 1.5s ease 1;
+    animation: rotate 1.5s ease 1s;
 }
 
 @keyframes rotate {
-    0%{transform: perspective(600px) rotateY(90deg); transform-origin: center;}
-    100%{transform: perspective(600px) rotateY(0deg); transform-origin: center;}
+    0% {
+        transform: perspective(600px) rotateY(90deg);
+        transform-origin: center;
+    }
+    100% {
+        transform: perspective(600px) rotateY(0deg);
+        transform-origin: center;
+    }
 }
 
 .dropdown-item:nth-of-type(1) {
@@ -188,3 +246,67 @@ button {
 .dropdown-item:nth-of-type(7) {
     animation-delay: 0.6s;
 }
+
+.dropdown-item:hover {
+    background-color: aqua;
+    color: white;
+}
+
+/*carousel*/
+.carousel-item {
+    height: 80vh;
+    min-height: 300px;
+    background: no-repeat scroll center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h5 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    top: 2rem;
+}
+
+.carousel-control-next {
+    position: absolute;
+    top: 50%; /* pushes the icon in the middle of the height */
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    top: 50%; /* pushes the icon in the middle of the height */
+    z-index: 5;
+    display: inline-block;
+}
+
+/*.carousel-control-next-icon {*/
+/*    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%343A40' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;*/
+/*}*/
+
+/*.carousel-control-prev-icon {*/
+/*    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%343A40' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;*/
+/*}*/
