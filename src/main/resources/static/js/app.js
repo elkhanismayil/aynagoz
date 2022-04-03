@@ -1,4 +1,3 @@
-
 document.getElementById('poct').addEventListener('mouseover', mouseOver);
 document.getElementById('poct').addEventListener('mouseout', mouseOut);
 document.getElementById('info').addEventListener('mouseover', mouseOver);
@@ -43,63 +42,21 @@ function mouseOutLoc() {
     document.getElementById('loc1').style.color = "black";
     document.getElementById('loc2').style.color = "black";
 }
-// first a tag change
-let cngColor = document.getElementById('changeColor');
-cngColor.addEventListener('mouseover', function handleMouseOver() {
-    cngColor.style.color = 'aqua'
+
+document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('scroll', function () {
+        let navbar_height;
+        if (window.scrollY > 200) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            navbar_height = document.querySelector('.navbar-dark').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+            document.getElementById('navbar_top').classList.remove('fixed-top');
+            document.body.style.paddingTop = '0';
+        }
+    });
 });
 
-cngColor.addEventListener('mouseout', function handleMouseOut(){
-    cngColor.style.color = 'white'
-})
-// second a tag change
-let cngColorDrop = document.getElementById('changeColorDrop');
-cngColorDrop.addEventListener('mouseover', function handleMouseOver() {
-    cngColorDrop.style.color = 'aqua'
-});
-
-cngColorDrop.addEventListener('mouseout', function handleMouseOut(){
-    cngColorDrop.style.color = 'white'
-})
-
-// change doctors color
-let docColor = document.getElementById('changeColorDoc');
-docColor.addEventListener('mouseover', function handleMouseOver() {
-    docColor.style.color = 'aqua'
-});
-
-docColor.addEventListener('mouseout', function handleMouseOut(){
-    docColor.style.color = 'white'
-})
-
-//change OPERATIONS color
-let operColor = document.getElementById('changeColorOper');
-operColor.addEventListener('mouseover', function handleMouseOver() {
-    operColor.style.color = 'aqua'
-});
-
-operColor.addEventListener('mouseout', function handleMouseOut(){
-    operColor.style.color = 'white'
-})
-
-//change ABOUT color
-let aboutColor = document.getElementById('changeColorAbout');
-aboutColor.addEventListener('mouseover', function handleMouseOver() {
-    aboutColor.style.color = 'aqua'
-});
-
-aboutColor.addEventListener('mouseout', function handleMouseOut(){
-    aboutColor.style.color = 'white'
-})
-
-//change APPOINTMENT color
-let appointmentColor = document.getElementById('changeColorAppointment');
-appointmentColor.addEventListener('mouseover', function handleMouseOver() {
-    appointmentColor.style.color = 'aqua'
-});
-
-appointmentColor.addEventListener('mouseout', function handleMouseOut(){
-    appointmentColor.style.color = 'white'
-})
-
-
+// $(window).on('load', function () {
+//     $('#loading').hide();
+// });

@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="shortcut icon" th:href="@{/favicon.ico}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>OKULOPLASTİKA - Ayna Göz</title>
+</head>
+<body>
+<header>
+    <!--First Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNavBar">
+        <div class="container-xxl">
+            <img src="https://www.aynagoz.az/wp-content/uploads/2018/02/ayna-goz.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="widgets_div">
+                        <div class="icon_div">
+                            <span><i class="bi bi-envelope"></i></span>
+                        </div>
+                        <div class="text_div" id="my_envelope">
+                            <span id="poct">E-poçt</span><br>
+                            <span id="info">info@aynagoz.az</span>
+                        </div>
+                    </li>
+                    <!--phone-->
+                    <li class="nav-item" id="phoneDiv" style="padding-left: 4rem">
+                        <div class="icon_div">
+                            <span><i class="bi bi-phone"></i></span>
+                        </div>
+                        <div class="text_div">
+                            <span id="phone1">Əlaqə</span><br>
+                            <span id="phone2">012-555-58-50</span>
+                        </div>
+                    </li>
+                    <!--location icon-->
+                    <li class="nav-item" id="locationDiv" style="padding-left: 4rem">
+                        <div class="icon_div">
+                            <span><i class="bi bi-geo-alt"></i></span>
+                        </div>
+                        <div class="text_div">
+                            <span id="loc1">Ünvan</span><br>
+                            <span id="loc2">Bakı, Nəsimi r-nu, 20 Yanvar küç.1B</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Second Navbar-->
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" th:href="@{/}" style="margin-left: 2rem">ANA SƏHİFƏ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            ŞÖBƏLƏR
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" th:href="@{/oklpls}">OKULOPLASTİKA</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">QLAUKOMA</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">KATARKTA</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">REFRAKTİV CƏRRAHİYYƏ</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">RETİNA</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">ÇƏPGÖZLÜK</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">KONTAKT LİNZA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">HƏKİMLƏR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ƏMƏLİYYATLAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HAQQIMIZDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/form}">QEYDİYYAT FORMU</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-warning">BİZİMLƏ ƏLAQƏ</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Breadcrumb-->
+    <div class="container-fluid overflow-hidden">
+        <div class="row">
+            <div class="col-12">
+                <div class="p-3 border bg-light">
+                    <div style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb" style="padding-top: 5px">
+                            <li class="breadcrumb-item"><a th:href="@{/}" class="text-decoration-none">ANA SƏHİFƏ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" style="color: #05e7f7;">OKULOPLASTİKA</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="margin-left: 13px; margin-right: 13px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="padding: 3rem;">
+                <h4>Göz Estetikası Okuloplastika və Orbita Cərrahiyyəsi</h4>
+                <p>Göz estetikası , göz qapağı sallanması, qaz ayaqları, qaş sallanması(düşüklüğü), göz altı torbaları, yanaqla göz altı arasında çökmə kimi hallarda tətbiq olunan cərrahiyyə üsuludur.
+                    Göz estetikası və göz ətrafı estetikasında bütün bu problemlər aradan qaldırılır.</p>
+                <h5>Göz Estetikası</h5>
+                <p>Yaşlanma ilə birlikdə göz qapaqlarında bir sıra dəyişikliklər baş verir. Bunlar göz altlarında torbalanma, üst qapaqlarda dəri artması və sallanma, gözün xarici kənarında “qaz ayağı” qırışıqlıqlardır.</p>
+                <p>Göz çevrəsindəki bu dəyişikliklər üçün “blefaroplastika” deyilən göz qapağı estetik əməliyyatı tətbiq edilir.</p>
+                <h5>Əməliyat və sonrası</h5>
+                <ul>
+                    <li>Anesteziya: əsasən lokal(yerli) anesteziya.</li>
+                    <li>Müddəti: İki qapaq toplam 45 dəqiqə.</li>
+                    <li>Gözlər bandajlanmaz. Sadəcə göz qapaqlarına ince bir bant yapıştırılır.</li>
+                    <li>Əməliyat sonrası: İlk 24 saat soyuq kompres (buz torbası ilə) tətbiq olunur. İlk 5 gün qapaqlar şiş və göyərmə olur. 3 gün sonra bant açılır. 1 həftə göz qapaqlarına su dəyməməlidir.</li>
+                    <li>Tikişlər: 7 gün sonra sökülür.</li>
+                    <li>Kontrollar: Əməliyatın səhərisi günü, 7 gün sonra, 1 ay sonra.</li>
+                    <li>Göz damlaları və məlhəm: Göz qapaqlarına antibiyotikli və kortizonlu məlhəm 1 həftə, gözə antibiyotikli damla 1 həftə.</li>
+                </ul>
+                <h5>Göz Qapağı Düşməsi (Ptoz)</h5>
+                <p>Üst göz qapağının düşük olmasına “ptoz” deyilir. Qapaq düşməsi hər yaşta görülə bilir. Bu narahatçılıq göz estetikası ətrafında əməliyyat edilməkdədir.</p>
+                <h6>Səbəbləri</h6>
+                <ul style="list-style-type:circle">
+                    <li>Nörojenik səbəblər: Göz qapağını yuxarıda tutan sinirdəki problemlər</li>
+                    <li>Myojenik səbəblər: Göz qapağı əzələsindəki qüsurlar</li>
+                    <li>Senil səbəblər: Yaşlanma, göz aməlliyatları</li>
+                    <li>Mexanik səbəblər: qapaqda ağırlık əmələ gətirən faktorlar.(məs. qapaqdaki şişlər, hematom və s.)</li>
+                </ul>
+                <h6>Müalicəsi</h6>
+                <p style="padding-left: 1rem">Müalicəsi əməliyyatladır. Ən çox tətbiq olunan 2 metod bunlardır:</p>
+                <ul class="checkmark">
+                    <li>Levator rezeksiyonu: Göz qapağı əzələ funksiyası kifayət olduğu zaman bu metod üstünlük təşkil edir.</li>
+                    <li>Frontal askı metodu: Göz qapağı əzələsi çox zəif olduğunda bu metoddan istifadə olunur. Anadan gəlmə olan qapaq sallanmasında, göz qapağı sinirinin iflicində və daha əvvəl göz qapağı sallanması əməliyyatı olmuş amma qapağı düzəlməmiş pasiyentlərə tətbiq olunur. Metodun mənfi tərəfi, göz qapama sırasında əməliyyatlı tərəfin çox az olaraq açıq qala bilməsidir.</li>
+                </ul>
+                <h5>Əməliyyat və Sonrası</h5>
+                <ul style="list-style-type:circle">
+                    <li>Anesteziya: lokal anesteziya.</li>
+                    <li>Müddəti: Tək qapaq 20 dəqiqə.</li>
+                    <li>Bandaj: Göz bandajlanır.</li>
+                    <li>Əməliyyat sonrası: Səhərisi gün bandaj açılır. 1 həftə göz qapağına su dəyməməlidir. Göz qapağında şişkinlik və göyərmə olur, 7 gün ərzində keçir.</li>
+                    <li>Tikişlər: 7 gün sonra açılır.</li>
+                    <li>Kontrollar: Əməliyyatın səhərisi günü, 7 gün sonra, 1 ay sonra.</li>
+                    <li>Göz damlaları və məlhəm: 1 həftə göz qapaqlarına antibiotikli və kortizonlu məlhəm, gözə antibiotikli damla.</li>
+                </ul>
+                <h6>Frontal Asqı Metodu</h6>
+                <ul style="list-style-type: circle">
+                    <li>Anesteziya: Göz qapaqlarına və alın bölgəsinə lokal anesteziya, uşaqlarda genəl anesteziya.</li>
+                    <li>Müddət: Tək qapaq 15 dəqiqə.</li>
+                    <li>Bandaj: Göz bandajlanır. Bandaj səhərisi gün açılır.</li>
+                    <li>Əməliyyat sonrası: Qapaqlarda şişkinlik və göyərmə, 7 gün sürər. Bir həftə göz qapağına su dəyməməlidir.</li>
+                    <li>Tikiş: 7 gün sonra alınır.</li>
+                    <li>Kontrollər: Əməliyyatın səhərisi günü, 5 gün sonra, 1 ay sonra.</li>
+                    <li>Göz damlaları və məlhəm(pomade): 1 həftə boyunca göz qapaqlarına antibiotikli və kortizonlu məlhəm, gözə antibiotikli damla.</li>
+                </ul>
+                <h6>Qapaqların İçə Dönməsi (Entropion)</h6>
+                <p>Göz qapaqlarının içə dönməsinə “entropion” deyilir. Entropion əsasən alt göz qapağında olur. Çox nadir hallarda üst qapaqda da olabilir. Entropion daha çox yaşlılığa bağlı (senil) qapaq boşalmasıdan qaynaqlanmaqla birlikdə, skar deyilən yara izlərinə bağlı ya da anadan gəlmə də ola bilir.</p>
+                <h6>Entropionun Əlamətləri</h6>
+                <ul style="list-style-type: circle">
+                    <li>Göz qapağının içə dönməsi.</li>
+                    <li>Gözdə batma, sulanma, qızartı.</li>
+                </ul>
+                <p>Müalicəsi əməliyyatdır. Əməliyyat müxtəlif metodlarla aparılır.</p>
+                <h6>Əməliyyatdan sonra ola biləcək problemlər</h6>
+                <ul style="list-style-type: circle">
+                    <li>İçə dönmə təkrarlana bilər.</li>
+                    <li>Düzəltmə çox olarsa qapaq çölə dönə bilər.</li>
+                    <li>Əməliyyat yerində infeksiya.</li>
+                    <li>Əməliyyat və Sonrası.</li>
+                    <li>Anesteziya: Göz qapaqlarına lokal anestezi.</li>
+                    <li>Müddət: Təxmini 20 dəqiqə.</li>
+                    <li>Bandaj: Göz bandajlanmaz. Sadəcə göz qapağına incə bir bant yapışdırılır.</li>
+                    <li>Əməliyyat sonrası: Səhərisi gün bant açılır. 1 həftə göz qapağına su dəyməməlidir.</li>
+                    <li>Tikişlər: 7 gün sonra alınır.</li>
+                    <li>Kontrollar: Əməliyyatın səhərisi günü, 7 gün sonra, 1 ay sonra.</li>
+                    <li>Göz damlaları və məlhəm: 1 həftə göz qapaqlarına antibiotikli məlhəm , gözə antibiotikli damla.</li>
+                </ul>
+                <h6>Qapaqların Xaricə Dönməsi (Ektropion)</h6>
+                <p>Göz qapaqlarının xaricə dönməsinə “ektropion” deyilir. Göz estetik cərrahiyyəsi ilə düzəldilə bilinir. Ektropion alt göz qapağında olur. Ektropion daha çok yaşa bağlı (senil) qapaq boşalmasından əmələ gələn, yara izlərinə (skatrisyel) , üz siniri iflicinə və alt qapaqdakı kütləyə(kitlelere) (mexaniki) bağlı da əmələ gələ bilir.</p>
+                <h6>Ektropionun əlamətləri</h6>
+                <ul style="list-style-type: circle">
+                    <li>Göz qapağının xaricə dönməsi.</li>
+                    <li>Göz yaşını buruna daşıyan kanalın ucunun gözə çevrilmiş olmamasından asılı olaraq gözdə batma, ağlayan kimi xaricə sulanma.</li>
+                    <li>Korneada quruma.</li>
+                </ul>
+                <span>Ektropionun müalicəsi əməliyyatladır.</span>
+                <h6>Əməliyyatın Əmələ gətirə biləcəyi Problemlər</h6>
+                <ul style="list-style-type: circle">
+                    <li>Çölə dönmə təkrarlana bilər.</li>
+                    <li>Düzəltmə çox olarsa qapaq içə dönə billər.</li>
+                    <li>Əməliyyat yerində infeksiya.</li>
+                </ul>
+                <h6>Əməliyyat və Sonrası</h6>
+                <ul style="list-style-type: circle">
+                    <li>Anesteziya: lokal anesteziya.</li>
+                    <li>Müddət: təxmini 20 dəqiqə.</li>
+                    <li>Bandaj: Göz bandajlanmaz. Göz qapağına incə bir bant yapıştırılır.</li>
+                    <li>Əməliyyat sonrası: Səhərisi gün bant açılır. 1 həftə göz qapağına su dəyilməməlidir.</li>
+                    <li>Tikişlər: 7 gün sonra alınır.</li>
+                    <li>Kontrollar: Əməliyyatın səhərisi günü, 7gün sonra, 1 ay sonra.</li>
+                    <li>Göz damlaları və məlhəm(pomade): 1 həftə göz qapaqlarına antibiotikli məlhəm, gözə antibiotikli damla.</li>
+                </ul>
+                <h6>Xalazion</h6>
+                <p>Göz qapaqlarındaki yağ vəzlərinin ucları kirpik diblərindəki məsamələrdir. Bu məsamələrin yağlanma, makyaj, infeksiya kimi səbəblərlə tutulması nəticəsində geridəki yağ vəzində şişkinlik və iltiahab əmələ gəlir. Bunun zamanla kistaya dönməsinə xalazion deyilir.</p>
+                <h6>Xalazionun Müalicəsi</h6>
+                <p>İlk mərhələdə infeksiyanın qarşısını almaq üçün antibiotikli damlalar istifadə olunur. İsti sarğı tətbiq olunur. İsti sarğının iltiahab toxumasının təşkil olmasını və kirpiklərin dibindəki məsamələrin genişlənməsini və xaricə boşalmasını təmin edə bilər. Amma vaxtında və lazım olan müalicə edilməzsə bir müddətdən sonra iltiahab toxumasının ətrafında kist əmələ gələr. Bunun cərrahi olaraq boşaldılması və kistin çıxarılması lazım ola bilər.</p>
+                <h6>Əməliyyatdan sonrası</h6>
+                <ul style="list-style-type: disc">
+                    <li style="font-weight: bold">Anesteziya: lokal anesteziya.</li>
+                    <li style="font-weight: bold">Müddət: 5 dəqiqə.</li>
+                    <li style="font-weight: bold">Bandaj: Göz bandajlanır. Bandaj səhərisi gün açılır.</li>
+                    <li style="font-weight: bold">Əməliyyat sonrası: Göz qapağında yüngül şişlik, göyərmə olur.</li>
+                    <li style="font-weight: bold">İşə dönüş: Səhərisi gün işə başlamaq olar.</li>
+                    <li style="font-weight: bold">Kontrollar: Əməliyyatın səhərisi günü, 1 ay sonra.</li>
+                    <li style="font-weight: bold">Göz damlaları və məlhəm(pomade): 1 həftə antibiotikli damla-məlhəm.</li>
+                </ul>
+                <p style="opacity: 0.5; margin-bottom: 2px">Göz Qapağında Yağ Toplantısı (Ksantelazma).</p>
+                <p style="opacity: 0.5; margin-bottom: 2px">Ksantelazma, əsasən xanım pasiyentlərdə rast gəlinən yağ-xolesterol toplantısıdır. Alt və üst göz qapaqlarının iç hissəsində rast gəlinir. Gənc yaşda rast gəlinən ksantelazmada, xolesterol yüksəkliyindən şübhə edilməlidir.</p>
+                <p style="opacity: 0.5;">Müalicəsi əməliyyatladır. Bu tip əməliyyatdan sonra iz qalmir.</p>
+                <h6>Əməliyyat və sonrası</h6>
+                <ul style="list-style-type: circle">
+                    <li>Anesteziya: ləkə bölgəsinə lokal anesteziya.</li>
+                    <li>Müddət: 5 dəqiqə.</li>
+                    <li>Bandaj: Göz bandajlanmaz. Göz qapağına incə bir bant yapışdırılır.</li>
+                    <li>Əməliyyat sonrası: Səhərisi gün bant açılır. Qapaqda yüngül göyərmə, 5 gün davam edə bilər. 1 həftə göz qapaqlarına su dəyməməlidir.</li>
+                    <li>Tikişlər: 7 gün sonra alınır.</li>
+                    <li>İşə dönüş: Səhərisi gün.</li>
+                    <li>Kontrollar: Əməliyyatın səhərisi günü, 7gün sonra, 1 ay sonra.</li>
+                    <li>Göz damlaları və məlhəm: 1 həftə göz qapaqlarına antibiotikli məlhəm.</li>
+                </ul>
+                <h6>Kirpiklərin İçəriyə Dönməsi (Trikiyazis)</h6>
+                <p>Kirpiklərin içəriyə dönməsinə “trikiyazis” deyilir. Uzun zaman infeksiyalar və qapaq xəstəliklərində ola bilir. İçəriyə dönən kirpiklər estetik olmayan görüntüyə, gözdə batma, rahatsızlıq hissi yaradır. Bu kirpiklər korneaya sürtünərək, korneaya zərər verirlər. Korneada qalıcı izlərə yol açaraq, görməyi azalda bilərlər.</p>
+                <h6>Müalicəsi</h6>
+                <ul style="list-style-type: circle">
+                    <li>İçə doğru dönmüş olan kirpiklər maqqaşla çıxardılır. Amma bu qalıcı bir yöntem deyil. 3 ay sonra kirpiklər yenə çıxar.</li>
+                    <li>İçə doğru dönmüş kirpik kökləri kauterlə (koterle) yandırılır. Bu proses bir neçə dəfə təkrar oluna bilər.</li>
+                </ul>
+                <h6>Göz Yaşı Kanal Tutulması</h6>
+                <p style="opacity: 0.5">Gözü nəmləndirən gözyaşı mayesi gözün iç qismindəki kiçik kanaldan buruna doğru irəliləyir. Bu kanalın, çox vaxt göz yaşı kisəsinin alt qismində tutulması nəticəsində xəstəlık qarşımıza çıxır.Göz yaşı kanalı tutulması ən çox ilk bir yaşdaki bəbəklərdə, orta yaş və sonrası qadınlarda, burun quruluşu əyri olan insanlarda və uzun müddət burun infeksiyası və alergiya nəticəsində meydana çıxır. Göz yaşı buruna keçe bilmədiyindən, göz qapağından yanağa doğru axar. Göz yaşı kanalı tututlması, gözdə sıx-sıx infeksiyaya səbəb olur.</p>
+
+            </div>
+        </div>
+    </div>
+</header>
+<script th:src="@{/js/jquery.min.js}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script th:src="@{/js/app.js}"></script>
+</body>
+</html>
