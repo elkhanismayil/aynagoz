@@ -17,11 +17,6 @@
     <title>ƏSAS SƏHİFƏ - Ayna Göz</title>
 </head>
 <body>
-<div class="d-flex justify-content-center">
-    <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-</div>
 <header>
     <!--First Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNavBar">
@@ -31,11 +26,12 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse navbar-expand col-4" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item" id="widgets_div">
+                    <!--envelope-->
+                    <li class="nav-item envelope" id="widgets_div" style="padding-left: 3rem">
                         <div class="icon_div">
-                            <span><i class="bi bi-envelope"></i></span>
+                            <i class="bi bi-envelope"></i>
                         </div>
                         <div class="text_div" id="my_envelope">
                             <span id="poct">E-poçt</span><br>
@@ -43,7 +39,7 @@
                         </div>
                     </li>
                     <!--phone-->
-                    <li class="nav-item" id="phoneDiv" style="padding-left: 4rem">
+                    <li class="nav-item phone" id="phoneDiv" style="padding-left: 3rem">
                         <div class="icon_div">
                             <span><i class="bi bi-phone"></i></span>
                         </div>
@@ -53,7 +49,7 @@
                         </div>
                     </li>
                     <!--location icon-->
-                    <li class="nav-item" id="locationDiv" style="padding-left: 4rem">
+                    <li class="nav-item location" id="locationDiv" style="padding-left: 3rem">
                         <div class="icon_div">
                             <span><i class="bi bi-geo-alt"></i></span>
                         </div>
@@ -83,29 +79,11 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" th:href="@{/oklpls}">OKULOPLASTİKA</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="#">QLAUKOMA</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="#">KATARKTA</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="#">REFRAKTİV CƏRRAHİYYƏ</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="#">RETİNA</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="#">ÇƏPGÖZLÜK</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="#">KONTAKT LİNZA</a></li>
                         </ul>
                     </li>
